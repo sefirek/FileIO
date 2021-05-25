@@ -1,0 +1,25 @@
+{
+  "name": "fileio",
+  "version": "1.0.0",
+  "description": "custom read/write functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sefirek/FileIO.git"
+  },
+  "keywords": [
+    "file",
+    "read",
+    "write",
+    "functions"
+  ],
+  "author": "https://github.com/sefirek, https://github.com/mati900607",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sefirek/FileIO/issues"
+  },
+  "homepage": "https://github.com/sefirek/FileIO#readme"
+}
