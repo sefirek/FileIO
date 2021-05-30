@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const fileProperties = require('./defaultFileProperties');
+const rimraf = require('rimraf');
 
 const FileIO = {
   fileProperties,
@@ -195,7 +196,7 @@ function doOnFile(action, dirPath) {
  */
 function deleteDir(dirPath) {
   try {
-    fs.rmdirSync(preparePath(dirPath));
+    rimraf.sync(preparePath(dirPath));
   } catch (err) {
     if (FileIO.fileProperties.fileExistsError && err.code !== 'ENOENT') {
       throw err;

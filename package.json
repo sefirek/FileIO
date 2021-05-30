@@ -4,7 +4,7 @@
   "description": "custom read/write functions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --watch --ui bdd --timeout 0 --require eslint-plugin-chai-register \"./test/**/*.test.js\""
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/sefirek/FileIO/issues"
   },
-  "homepage": "https://github.com/sefirek/FileIO#readme"
+  "homepage": "https://github.com/sefirek/FileIO#readme",
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  }
 }
