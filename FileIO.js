@@ -242,7 +242,9 @@ function ensureDeleting(filePath) {
  * @returns {string} url
  */
 function preparePath(htmlPath) {
-  return joinPath(process.cwd(), htmlPath);
+  const cwd = process.cwd();
+  if(htmlPath.includes(cwd)) return htmlPath;
+  return joinPath(cwd, htmlPath);
 }
 
 
